@@ -23,3 +23,16 @@ if sales < 1000:
 else:
     bonus = sales * 0.15
 print("Bonus is $", bonus, sep='')
+
+# Add a loop to the sales bonus exercise you did above, so that the program repeatedly asks for the
+# user's sales and prints the bonus until they enter a negative number.
+# Remember that until is the opposite of while.
+
+sales = float(input("Enter sales: $"))
+while sales >= 0:
+    if sales < 1000:
+        bonus = sales * 0.1
+    else:
+        bonus = sales * 0.15
+    print("Bonus is $", bonus, sep='')
+    sales = float(input("Enter sales: $"))
