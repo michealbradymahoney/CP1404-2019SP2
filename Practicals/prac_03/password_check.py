@@ -59,10 +59,10 @@ MINIMUM_LENGTH = 5
 
 def main():
     password = get_password()
-    print_as_astericks(password)
+    print_as_asterisks(password)
 
 
-def print_as_astericks(password):
+def print_as_asterisks(password):
     print('*' * len(password))
 
 
