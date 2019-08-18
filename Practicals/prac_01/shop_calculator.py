@@ -26,6 +26,9 @@
 
 num_items = int(input("Number of items: "))
 total = 0
+while num_items < 0:
+    print("Invalid number of items!")
+    number = int(input("Number of items: "))
 for i in range(num_items):
     price = float(input("Price of item: "))
     total += price
