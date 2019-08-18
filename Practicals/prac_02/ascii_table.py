@@ -3,3 +3,5 @@
 
 char = input("Enter a character: ")
 print("The ASCII code for {} is {}".format(char, ord(char)))
+number = int(input("Enter a number between 33 and 127: "))
+print("The character for {} is {}".format(number, chr(number)))
