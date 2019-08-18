@@ -14,6 +14,6 @@ else:
     if score > 50:
         print("Passable")
     if score > 90:
-    print("Excellent")
+        print("Excellent")
 if score < 50:
     print("Bad")
