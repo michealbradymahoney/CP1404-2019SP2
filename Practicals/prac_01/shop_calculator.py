@@ -29,4 +29,4 @@ total = 0
 for i in range(num_items):
     price = float(input("Price of item: "))
     total += price
-print("Total price for ", num_items, " items is $", total, sep="")
+print("Total price for {} items is ${:.2f}".format(num_items, total))
