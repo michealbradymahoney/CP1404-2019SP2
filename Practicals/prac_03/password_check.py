@@ -32,11 +32,37 @@ Micheal Brady-Mahoney
 # PyCharm should create the function and replace the old code with a call to it like password = get_password()
 # (Note that the details depend on how you wrote the code to start with.)
 
+# MINIMUM_LENGTH = 5
+#
+#
+# def main():
+#     password = get_password()
+#     print('*' * len(password))
+#
+#
+# def get_password():
+#     password = input("Enter password of at least {} characters: ".format(MINIMUM_LENGTH))
+#     while len(password) < MINIMUM_LENGTH:
+#         password = input("Enter password of at least {} characters: ".format(MINIMUM_LENGTH))
+#     return password
+#
+#
+# main()
+
+
+# Now refactor the loop that prints the asterisks into a function that takes 1 parameter: the password.
+# (PyCharm will see that password needs to be an input parameter and create the function accordingly.)
+# Note that this will be a super simple function, but that's OK.
+
 MINIMUM_LENGTH = 5
 
 
 def main():
     password = get_password()
+    print_as_astericks(password)
+
+
+def print_as_astericks(password):
     print('*' * len(password))
 
 
