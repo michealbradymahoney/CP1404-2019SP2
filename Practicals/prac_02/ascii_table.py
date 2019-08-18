@@ -25,8 +25,24 @@
 # ASCII value and the other for the character itself. Use the str.format() method to align the text nicely
 # in two columns. Print the values between LOWER and UPPER.
 
+# LOWER = 33
+# UPPER = 127
+#
+# for value in range(LOWER, UPPER + 1):
+#     print("{:3} {:>4}".format(value, chr(value)))
+
+# Add columns to your ASCII table output. Ask the user for how many columns to print,
+# then figure out how to write loop(s) and print statements to achieve this.
+
 LOWER = 33
 UPPER = 127
 
-for value in range(LOWER, UPPER + 1):
-    print("{:3} {:>4}".format(value, chr(value)))
+columns = int(input("Enter number of columns: "))
+number_of_values = UPPER - LOWER + 1
+rows = number_of_values // columns
+value = LOWER
+for row in range(rows):
+    for column in range(columns):
+        print("{:6} {:>2}".format(value, chr(value)), end="")
+        value += 1
+    print()
