@@ -6,10 +6,10 @@ Broken program to determine score status
 
 def main():
     score = float(input("Enter score: "))
-    score_checker(score)
+    determine_status(score)
 
 
-def score_checker(score):
+def determine_status(score):
     if score < 0:
         print("Invalid score")
     else:
