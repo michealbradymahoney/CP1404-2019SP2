@@ -4,7 +4,7 @@ MAX_NUMBER = 45
 MIN_NUMBER = 1
 NUMS_PER_GAME = 6
 
-num_games = int(input("How many quick picks"))
+num_games = int(input("How many quick picks? "))
 
 for i in range(num_games):
     picks = []
