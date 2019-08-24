@@ -13,4 +13,5 @@ for i in range(num_games):
         while number in picks:
             number = random.randint(MIN_NUMBER, MAX_NUMBER)
         picks.append(number)
-    print(picks)
+    picks.sort()
+    print(" ".join("{:3}".format(number) for number in picks))
