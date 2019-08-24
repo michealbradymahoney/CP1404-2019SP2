@@ -17,4 +17,4 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
 #         print("Invalid short state")
 #     state = input("Enter short state: ").upper()
 
-print("\n".join("{}\t{}".format(short_state, long_state) for short_state, long_state in STATE_NAMES.items()))
+print("\n".join("{:3} is {}".format(short_state, long_state) for short_state, long_state in STATE_NAMES.items()))
