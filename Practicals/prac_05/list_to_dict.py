@@ -18,8 +18,15 @@
 # Write a function that takes two parallel lists as input parameters and returns a dictionary where keys are from the
 # first list and the values are from the second. Use the above example as a test case.
 
-names = ["Jack", "Jill", "Harry"]
-dates_of_birth = [(12, 4, 1999), (1, 1, 2000), (27, 3, 1982)]
+# names = ["Jack", "Jill", "Harry"]
+# dates_of_birth = [(12, 4, 1999), (1, 1, 2000), (27, 3, 1982)]
+#
+#
+# def list_to_dict():
+#     names_dict = dict(zip(names, dates_of_birth))
+#     print(names_dict)
+#
+#
+# list_to_dict()
 
-names_dict = dict(zip(names, dates_of_birth))
-print(names_dict)
+
