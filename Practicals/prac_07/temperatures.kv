@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Enter \nTemperature: '
+            color: (1, 1, 0, 1)
+        TextInput:
+            id: input_temp
+            text: ''
+        Button:
+#            size_hint_x: 0.25
+            text: 'Convert to Celsius'
+            on_press: app.handle_fahrenheit()
+        Button:
+#            size_hint_x: 0.25
+            text: 'Convert to Fahrenheit'
+            on_press: app.handle_celsius()
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            color: (1, 1, 0, 1)
+            id: output_label
+        Button:
+            text: 'Clear'
+            id: clear_label
+            on_press: app.press_clear()
